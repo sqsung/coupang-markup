@@ -1,0 +1,89 @@
+/* CSS 작성 */
+header {
+  margin: 0 auto;
+  width: 1020px;
+}
+
+/* --------Today discovery title section-------- */
+.main {
+  width: 1020px;
+  border: 1px dashed black;
+  margin: 0 auto;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+}
+
+.title p {
+  padding-left: 10px;
+}
+
+/* --------Today discovery product section-------- */
+.button {
+  position: absolute;
+  background-color: black;
+  opacity: 0.2;
+  left: 15px;
+  bottom: 15px;
+}
+
+.item-container {
+  /* border: 1px solid red; */
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.item {
+  float: left;
+  border: 1px solid black;
+  position: relative;
+  height: 310px;
+}
+/* first row */
+.item2 {
+  float: right;
+}
+
+.wide {
+  padding: 20px 28px;
+  width: 502px;
+  height: 310px;
+}
+
+.not-wide {
+  padding: 14px 22px 14px 21px;
+  width: 243px;
+  height: 310px;
+}
+
+.second {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+/* second row */
+.item3{
+  margin-right: 16px;
+}
+
+.item4 {
+  margin-right: 13px;
+}
+
+.item5 {
+  margin-right: 16px;
+}
+
+.item6 {
+  float:right;
+}
+/* third row */
+.item7 {
+  margin-right: 16px;
+}
+
+.item9 {
+  float:right;
+}
