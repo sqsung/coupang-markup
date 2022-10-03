@@ -4,10 +4,15 @@ header {
   width: 1020px;
 }
 
+#logo {
+  height: 40px;
+  width: 176px;
+  margin-bottom: 56px;
+}
+
 /* --------Today discovery title section-------- */
 .main {
   width: 1020px;
-  border: 1px dashed black;
   margin: 0 auto;
 }
 
@@ -16,8 +21,15 @@ header {
   display: flex;
 }
 
+.title h2 {
+  font-size: 24px;
+  color: #181818;
+  font-weight: 500;
+}
+
 .title p {
   padding-left: 10px;
+  color: var(--color-gray-600);
 }
 
 /* --------Today discovery product section-------- */
@@ -25,26 +37,30 @@ header {
   position: absolute;
   background-color: black;
   opacity: 0.2;
-  left: 15px;
-  bottom: 15px;
+  left: 20px;
+  bottom: 20px;
+
+  width: 42px;
+  height: 42px;
+  padding: 0px;
 }
 
 .item-container {
   /* border: 1px solid red; */
-  width: auto;
-  height: auto;
+  /* width: 1020px; */
+  /* height: auto; */
   overflow: hidden;
 }
 
 .item {
   float: left;
-  border: 1px solid black;
+  border: 1px solid var(--color-gray-500);
   position: relative;
   height: 310px;
 }
 /* first row */
 .item2 {
-  float: right;
+  margin-left: 14px;
 }
 
 .wide {
@@ -81,9 +97,32 @@ header {
 }
 /* third row */
 .item7 {
-  margin-right: 16px;
+  margin-right: 13px;
 }
 
 .item9 {
   float:right;
+}
+
+/* user interaction  */
+.item:hover {
+  border: 1px solid var(--color-blue-600);
+}
+
+.item:hover button {
+  background-color: var(--color-blue-600);
+  opacity: 1.0;
+  width: 112px;
+  height: 42px;
+  transition: 0.1s;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.item:hover button::before {
+  content: '구매하기';
+  color: white;
+  font-size: 14px;
 }
