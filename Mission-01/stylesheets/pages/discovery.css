@@ -1,4 +1,5 @@
 /* CSS 작성 */
+
 header {
   margin: 0 auto;
   width: 1020px;
@@ -39,6 +40,7 @@ header {
   opacity: 0.2;
   left: 20px;
   bottom: 20px;
+  cursor: pointer;
 
   width: 42px;
   height: 42px;
@@ -105,9 +107,10 @@ header {
 }
 
 /* user interaction  */
-.item:hover {
+.item:hover, :focus {
   border: 1px solid var(--color-blue-600);
 }
+
 
 .item:hover button {
   background-color: var(--color-blue-600);
@@ -122,6 +125,24 @@ header {
 }
 
 .item:hover button::before {
+  content: '구매하기';
+  color: white;
+  font-size: 14px;
+}
+
+.item:focus button {
+  background-color: var(--color-blue-600);
+  opacity: 1.0;
+  width: 112px;
+  height: 42px;
+  transition: 0.1s;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.item:focus button::before {
   content: '구매하기';
   color: white;
   font-size: 14px;
