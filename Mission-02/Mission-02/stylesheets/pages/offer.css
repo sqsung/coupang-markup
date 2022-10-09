@@ -1,0 +1,190 @@
+/* 오늘의 쇼핑 제안 */
+
+.all-container {
+    width: 1022px;
+    height: 354px;
+    margin: 0 auto;
+}
+
+.logo-header {
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+
+.logo-img {
+    width: 176px;
+    height: 40px;
+}
+
+.offer-headline {
+    display: flex;
+    align-items: center;
+}
+
+.offer-headline-text {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--color-black);
+}
+
+.offer-headline-text::before {
+    content: url("/Mission-02/assets/icon/shopping.svg");
+    margin-right: 4.62px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.product-recommendation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product {
+    width: 200px;
+    height: 270px;
+    position: relative;
+}
+
+.discount-rate {
+    background-color: var(--color-red-500);
+    width: 53px;
+    height: 30px;
+    border-radius: 0 0 4px 0;
+    padding-top: 3px;
+    padding-left: 10px;
+    line-height: 24px;
+
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+
+    position: absolute;
+    z-index: 10;
+}
+
+.product-img {
+    width: 160px;
+    height: 160px;
+
+    position: absolute;
+    left: 20px;
+    top: 14px;
+}
+
+.product-name {
+    position: absolute;
+    top: 186px;
+    left: 14px;
+    
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.star-container {
+    position: relative; 
+}
+
+.rating-number {
+    position: absolute;
+    top: 215px;
+    left: 86px;
+
+    font-size: 14px;
+    color: var(--color-gray-700)
+}
+
+.star1 {
+    position: absolute;
+    top: 215px;
+    left: 14px;
+
+    width: 68px;
+    height: 16px;
+    background-image: url(/Mission-02/assets/sprites/rating-stars.png);
+    background-position: 0 28px;
+}
+
+.star2 {
+    position: absolute;
+    top: 235px;
+    left: 14px;
+
+    width: 68px;
+    height: 16px;
+    background-image: url(/Mission-02/assets/sprites/rating-stars.png);
+    background-position: 0 28px;
+}
+
+.star3 {
+    position: absolute;
+    top: 235px;
+    left: 14px;
+
+    width: 68px;
+    height: 16px;
+    background-image: url(/Mission-02/assets/sprites/rating-stars.png);
+    background-position: 0 42px;
+}
+
+.star4 {
+    position: absolute;
+    top: 235px;
+    left: 14px;
+
+    width: 68px;
+    height: 16px;
+    background-image: url(/Mission-02/assets/sprites/rating-stars.png);
+    background-position: 0 42px;
+}
+
+.star5 {
+    position: absolute;
+    top: 235px;
+    left: 14px;
+
+    width: 68px;
+    height: 16px;
+    background-image: url(/Mission-02/assets/sprites/rating-stars.png);
+    background-position: 0 42px;
+}
+
+.rating-number2 {
+    position: absolute;
+    top: 235px;
+    left: 86px;
+}
+
+.rating-number3 {
+    position: absolute;
+    top: 235px;
+    left: 86px;
+}
+
+.rating-number4 {
+    position: absolute;
+    top: 235px;
+    left: 86px;
+}
+
+.rating-number5 {
+    position: absolute;
+    top: 235px;
+    left: 86px;
+}
+
+.delivery-container {
+    position: relative;
+}
+
+.rocket {
+    position: absolute;
+    top: 215px;
+    left: 14px;
+
+    color: var(--color-gray-700);
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 16.8px;
+}
