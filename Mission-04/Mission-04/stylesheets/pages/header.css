@@ -42,7 +42,11 @@ li:last-child {
 /*--------main header--------*/
 
 .main {
-    border: 1px solid black;
+    /* border: 1px solid salmon; */
+    width: 1020px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 870px;
 }
 
 .button--category {
@@ -80,6 +84,9 @@ li:last-child {
     background-image: url("/Mission-04/assets/logo/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
+    height: 40px;
+    width: 176px;
+    margin: 0;
 }
 
 .search {
@@ -87,7 +94,10 @@ li:last-child {
     padding: 0px;
     display: flex;
     width: 516px;
+    height: 40px; 
     position: relative;
+    margin-top: 5px;
+    margin-left: 30px;
 }
 
 .selector {
@@ -96,9 +106,10 @@ li:last-child {
     border: 0;
     border-right: 1px solid var(--color-gray-100);
     width: 135px;
-    height: 40px;
+    height: 38px;
     z-index: 999;
     padding-left: 12px;
+    z-index: 1;
 
     color: var(--color-gray-600);
     font-size: 12px;
@@ -107,7 +118,6 @@ li:last-child {
     -webkit-appearance:none; /* for chrome */
     -moz-appearance:none; /*for firefox*/
     appearance:none;
-    background-image: url()
 }
 
 .down-arrow {
@@ -125,10 +135,12 @@ select::-ms-expand{
 }
 
 .search-bar {
-    border: 0px;
+    border: none;
     width: 301px;
-    height: 40px;
+    height: 38px;
+    background-color: transparent;
 
+    z-index: 1;
     padding-left: 10px;
     color: var(--color-gray-600);
     font-size: 12px;
@@ -138,4 +150,228 @@ select::-ms-expand{
 .voice, .search-btn {
     background-color: transparent;
     border: 0px;
+}
+
+.header-inner {
+    border: 1px solid blue;
+    width: 870px;
+    height: 58px;;
+    margin-top: 29px;
+    display: grid; 
+    grid-template-columns: 176px 516px auto auto;
+
+}
+
+/* ----- my coupang ------ */
+.myCoupang {
+    position: relative;
+    left: 22px;
+    width: 90px;
+    text-align: center;
+    margin-left: 22px;
+}
+
+.myCoupang button {
+    font-weight: 400;
+    font-size: 12px;
+    background-color: transparent;
+    position: relative;
+    border: none;
+}
+
+.myCoupang button div {
+    background-image: url("/Mission-04/assets/icon/my-coupang.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--color-gray-900);
+    position: relative;
+    left: 1px;
+    margin: 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.myCoupang p {
+    margin: 0px;
+}
+
+.myCoupang ul {
+    display: none;
+}
+
+.myCoupang.is--active ul {
+  position: relative;
+  display: block;
+  height: 137px;
+  width: 90px;
+  margin-top: 0px;
+
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--color-white);
+}
+
+.myCoupang.is--active ul {
+    list-style-type: none;
+    border: 1px solid var(--color-gray-300);
+    width: 90px;
+    height: 130px;
+    margin: 0 auto;
+    top: 7px;
+    padding: 0px;
+    margin-top: 7px;
+}
+
+.myCoupang.is--active ul li {
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.myCoupang.is--active ul li a {
+    text-align: center;
+}
+
+.myCoupang.is--active ul li:first-child {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+}
+
+.myCoupang.is--active ul li:nth-child(2) {
+    position: absolute;
+    top: 58px;
+    left: 20px;
+}
+
+.myCoupang.is--active ul li:last-child {
+    position: absolute;
+    top: 92px;
+    left: 20px;
+}
+
+.myCoupang.is--active ul::after {
+    content: "";
+    z-index: 9999;
+    width: 7.5px;
+    height: 7.5px;
+    border-top: 1px solid var(--color-gray-300);
+    border-bottom: 0px solid var(--color-gray-300);
+    border-left: 1px solid var(--color-gray-300);
+    border-right: 0px solid var(--color-gray-300);
+    top: 0%;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: -4.5px;
+    background-color: var(--color-white);
+  }
+  
+/* ----- cart ------ */
+.cart, .cart.cart--empty {
+    width: 45.47px;
+    height: 58px;
+    position: relative;
+    left: 10px;
+}
+
+.cart button {
+    font-weight: 400;
+    font-size: 12px;
+    background-color: transparent;
+    border: none;    
+}
+
+.cart button p {
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    width: 45px;
+    left: 0px;
+}
+
+.cart button div {
+    width: 40px;
+    height: 40px;
+    background-image: url("/Mission-04/assets/icon/cart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--color-gray-900);
+    position: relative;
+    left: 1px;
+    margin: 0px auto;
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 0px;
+    left: 2.5px;
+}
+
+.num {
+    color: var(--color-white);
+    background-color: var(--color-blue-600);
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+
+    position: absolute;
+    top: 1px;
+    left: 22px;
+    z-index: 500;
+}
+
+.cart .msg {
+    display: none;
+}
+
+.cart.cart--empty .msg {
+    display: block;
+    position: absolute;
+    top: 66px;
+    right: 8px;
+    width: 282px; 
+    height: 99px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-300);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 36px 0;
+} 
+
+.cart.cart--empty .msg::after {
+    content: "";
+    z-index: 9999;
+    width: 7.5px;
+    height: 7.5px;
+    border-top: 1px solid var(--color-gray-300);
+    border-bottom: 0px solid var(--color-gray-300);
+    border-left: 1px solid var(--color-gray-300);
+    border-right: 0px solid var(--color-gray-300);
+    top: 0%;
+    right: 5%;
+    margin-left: -5px;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: -4.5px;
+    background-color: var(--color-white);
+} 
+
+/* ----- type nav ------*/
+.type-nav ul {
+    border: 1px dotted blue;
+    list-style-type: none;
+}
+
+.type-nav li {
+    border: 1px solid red;
+    padding: 6px 14px;
 }
