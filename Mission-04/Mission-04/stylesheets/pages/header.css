@@ -42,14 +42,19 @@ li:last-child {
 /*--------main header--------*/
 
 .main {
-    /* border: 1px solid salmon; */
     width: 1020px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 870px;
+    grid-template-columns: 110px 206px 546px 1fr 1fr;
+    grid-template-rows: 58px 58px;
+    grid-template-areas:
+    "cg logo search myCoupang cart"
+    "cg tnav tnav tnav"
 }
 
 .button--category {
+    grid-area: "cg";
+
     color: var(--color-white);
     font-size: 12px;
     font-weight: 400;
@@ -79,24 +84,34 @@ li:last-child {
     left: 32.5px;
 }
 
+.logo {
+    grid-area: "logo";
+    margin: 0px;
+    margin-left: 40px;
+    margin-top: 34px;
+}
+
 .logo h1 {
+    font-size: 0px;
     color: rgba(0, 0, 0, 0);
-    background-image: url("/Mission-04/assets/logo/logo.png");
+    background-image: url("/Mission-04/assets/logo/logo.svg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 40px;
     width: 176px;
-    margin: 0;
+    margin: 0px;
 }
 
 .search {
+    grid-area: "search";
+
     border: 1px solid var(--color-blue-600);
     padding: 0px;
     display: flex;
     width: 516px;
     height: 40px; 
     position: relative;
-    margin-top: 5px;
+    margin-top: 34px;
     margin-left: 30px;
 }
 
@@ -153,7 +168,6 @@ select::-ms-expand{
 }
 
 .header-inner {
-    border: 1px solid blue;
     width: 870px;
     height: 58px;;
     margin-top: 29px;
@@ -164,11 +178,13 @@ select::-ms-expand{
 
 /* ----- my coupang ------ */
 .myCoupang {
+    grid-area: "myCoupang";
+
     position: relative;
     left: 22px;
     width: 90px;
     text-align: center;
-    margin-left: 22px;
+    margin-top: 29px;
 }
 
 .myCoupang button {
@@ -270,10 +286,13 @@ select::-ms-expand{
   
 /* ----- cart ------ */
 .cart, .cart.cart--empty {
+    grid-area: "cart";
+
     width: 45.47px;
     height: 58px;
     position: relative;
     left: 10px;
+    margin-top: 29px;
 }
 
 .cart button {
@@ -366,12 +385,29 @@ select::-ms-expand{
 } 
 
 /* ----- type nav ------*/
+
+.type-nav {
+    grid-area: "tnav";
+    
+    margin-left: 146px;
+    margin-top: 30px;
+    width: 755px;
+    height: 26px; 
+}
+
 .type-nav ul {
-    border: 1px dotted blue;
     list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    height: 26px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .type-nav li {
-    border: 1px solid red;
-    padding: 6px 14px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 auto;
 }
