@@ -29,7 +29,7 @@
   border: none;
 }
 
-.button--category p {
+.button--category {
   font-size: 12px;
   font-weight: 400;
   margin: 0px;
@@ -61,7 +61,6 @@ h2 {
 }
 
 .navigation__inner {
-  border: 1px solid red;
   width: 1020px;
   height: 520px;
   position: absolute;
@@ -110,6 +109,7 @@ h2 {
   position: absolute;
   left: 0px;
   top: 0px;
+  z-index: 3;
 }
 
 .d2 {
@@ -121,6 +121,7 @@ h2 {
   width: 180px;
   height: 500px;
   padding: 10px 5px;
+  z-index: 2;
 }
 
 .d3 {
@@ -204,3 +205,149 @@ h2 {
 /* ---------------------------------------------- */
 /* 푸터                                            */
 /* ---------------------------------------------- */
+.cg-container {
+  background-color: var(--color-gray-200);
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.customer-guide-list {
+  list-style-type: none;
+  color: var(--color-gray-800);
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 auto;
+  height: 40px;
+  width: 1006px;
+  /* border: 1px solid black; */
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.customer-guide-list .bold {
+  font-weight: 700;
+}
+
+.customer-guide-list li {
+  display: inline-block;
+}
+
+.main-footer-container {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.mf-contents {
+  /* border: 1px dashed red; */
+  padding: 0px;
+  margin: 32px auto;
+  width: 1200px;
+  height: 143px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mf-logo {
+  width: 176px;
+  height: 40px;
+  background-image: url("/Mission-05/assets/logo/logo-mono.svg");
+  font-size: 0;
+}
+
+.mf-info p {
+  margin: 0px;
+  margin-top: 12px;
+  color: var(--color-gray-800);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mf-info p:first-child {
+  margin-top: 0px;
+}
+
+.woori .title,
+.woori .msg {
+  width: 282px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-gray-800);
+  margin-top: 8px;
+}
+
+.woori .title {
+  font-weight: 700;
+  margin: 0px;
+}
+
+.contact-div {
+  width: 293px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.contact-div p {
+  margin: 0px;
+  color: var(--color-gray-800);
+}
+
+.mf-divider {
+  height: 12px;
+  width: 1px;
+  border-right: 1px solid gray;
+  position: relative;
+  top: 5px;
+}
+
+.phone-num {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-gray-800);
+}
+
+.mf-contact p {
+  font-size: 16px;
+  color: var(--color-gray-800);
+  font-weight: 400;
+  margin: 0px;
+}
+
+.mf-contact .address {
+  margin-top: 12px; 
+  margin-bottom: 8px;
+}
+
+.ft-ft {
+  background-color: var(--color-gray-900);
+  height: 102px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.ft-ft-contents {
+  width: 1020px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media img {
+  margin-top: 36px;
+}
+
+.copyright p {
+  color: var(--color-gray-200);
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.insta {
+  background-image: linear-gradient(174.12deg, #285AEB 5.61%, #BC1888 22.32%, #CC2366 36.16%, #DC2743 51.91%, #E6683C 73.38%, #F09433 91.99%);
+  border-radius: 50px;
+}
